@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to DonorBy</title>
+    <link rel="stylesheet" href="{% static 'landingPage/css/styles.css'%}" />
+    <!-- <meta http-equiv = "refresh" content = "18; url = {% url 'HospitalLogin' %}" /> -->
+  </head>
+  <body>
+    <div class="terminal">
+      <span class="dollar"></span> Hi, my name is Rithika Hettiarachchi
+      <br />
+      <span class="dollar"></span> Undergraduate Student at LNBTI
+      <br />
+      <span class="dollar"></span> Welcome to DonorBY
+      <br />
+      <span class="dollar"></span> Hope you enjoy
+    </div>
+    <script>
+        setTimeout(function(){
+           window.location.href = "{% url 'home' %}";
+        }, 25000);
+     </script>
+    <!-- js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="{% static 'landingPage/js/script.js'%}"></script>
+  </body>
+</html>
